@@ -1,0 +1,24 @@
+﻿@model _24DH112651_Be2.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <style>
+        img {
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<h2 class="bg-success">CHI TIET SAN PHAM</h2>
+
+<div class="form-group">
+    <div class="col-md-ofset-3 col-md-9">
+    @Html.ActionLink("Sua", "Edit", new { id = Model.CategoryID }, new { @class = "btn btn-primary " })
+    @Html.ActionLink("Quay lai danh sach", "Index", null, new { @class = "btn-primary " })
+</div>
+</div>
+
